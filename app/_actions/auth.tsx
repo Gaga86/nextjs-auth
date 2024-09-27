@@ -143,8 +143,6 @@ export async function login(state: FormState, formData: FormData) {
 }
 
 export async function logout() {
-  console.log('LOGOUT method')
   await deleteSession()
-  console.log('LOGOUT redirect to login')
   redirect('/login')
 }
